@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "fuel-prices": { "url": "https://mcp.apify.com?tools=sste/official-fuel-prices" }
+  }
+}
