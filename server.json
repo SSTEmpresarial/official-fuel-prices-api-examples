@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.SSTEmpresarial/official-fuel-prices",
+  "title": "Official Fuel Prices",
+  "description": "Live official fuel station prices for France, Spain, Italy and Western Australia in one schema.",
+  "version": "1.0.0",
+  "websiteUrl": "https://fuel-prices-api.pages.dev/mcp/",
+  "repository": {
+    "url": "https://github.com/SSTEmpresarial/official-fuel-prices-api-examples",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=sste/official-fuel-prices",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token as 'Bearer <token>' (free Apify account; pay per result returned)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
